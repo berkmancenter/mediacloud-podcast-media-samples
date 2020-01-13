@@ -62,6 +62,13 @@ ffmpeg -i kim_kardashian-prores-pcm_s24be.mov -vn -acodec aac kim_kardashian-aac
 ```
 
 
+### MKV with two (MP3, AAC) audio channels
+
+```shell
+ffmpeg -i kim_kardashian-prores-pcm_s24be-480p.mov -map 0:0 -map 0:1 -map 0:1 -c:v libx264 -c:a:0 aac -c:a:1 mp3 kim_kardashian-h264-aac-mp3.mkv
+```
+
+
 ## License
 
 I thereby disclaim any copyright of these media files of me saying *Kim Kardashian*, therefore they are in public domain.
