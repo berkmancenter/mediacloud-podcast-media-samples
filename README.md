@@ -69,6 +69,13 @@ ffmpeg -i kim_kardashian-prores-pcm_s24be-480p.mov -map 0:0 -map 0:1 -map 0:1 -c
 ```
 
 
+### MKV with no audio
+
+```shell
+ffmpeg -i kim_kardashian-prores-pcm_s24be-480p.mov -c:v libx264 -an kim_kardashian-h264-noaudio.mkv
+```
+
+
 ## License
 
 I thereby disclaim any copyright of these media files of me saying *Kim Kardashian*, therefore they are in public domain.
