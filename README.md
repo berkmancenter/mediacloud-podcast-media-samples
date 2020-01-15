@@ -76,6 +76,13 @@ ffmpeg -i kim_kardashian-prores-pcm_s24be-480p.mov -c:v libx264 -an kim_kardashi
 ```
 
 
+### Invalid media file
+
+```shell
+dd if=/dev/urandom of=kim_kardashian-invalid.mp3 bs=1k count=60
+```
+
+
 ## License
 
 I thereby disclaim any copyright of these media files of me saying *Kim Kardashian*, therefore they are in public domain.
