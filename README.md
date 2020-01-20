@@ -48,10 +48,17 @@ ffmpeg -i kim_kardashian-prores-pcm_s24be.mov -vn -acodec libopus kim_kardashian
 ```
 
 
-### MP3
+### MP3 (stereo)
 
 ```
-ffmpeg -i kim_kardashian-prores-pcm_s24be.mov -vn -acodec mp3 kim_kardashian-mp3.mp3
+ffmpeg -i kim_kardashian-prores-pcm_s24be.mov -vn -acodec mp3 kim_kardashian-mp3-stereo.mp3
+```
+
+
+### MP3 (mono)
+
+```
+ffmpeg -i kim_kardashian-prores-pcm_s24be.mov -vn -acodec mp3 -ac 1 kim_kardashian-mp3-mono.mp3
 ```
 
 
