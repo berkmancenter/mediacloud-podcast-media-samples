@@ -1,8 +1,8 @@
 # Media samples for testing podcast transcoding
 
-Video and audio samples of me saying *Kim Kardashian*. Used for [Media Cloud's](https://github.com/berkmancenter/mediacloud) podcast transcription testing.
+Video and audio samples of both me saying *Kim Kardashian* (multiple short samples) and Richard Nixon resigning (a single long sample). Used for [Media Cloud's](https://github.com/berkmancenter/mediacloud) podcast transcription testing.
 
-Stored here for the huge binary fines not to litter the main repo.
+Stored here in order to not litter the main repo with huge media files
 
 
 ## Creation process
@@ -91,6 +91,17 @@ dd if=/dev/urandom of=kim_kardashian-invalid.mp3 bs=1k count=60
 ```
 
 
+### Nixon resignation speech
+
+Useful for testing longer transcription operations, i.e. what happens if we submit a job and try to fetch its results too soon.
+
+```shell
+curl --output nixon_speech-vorbis-15m22s.ogg \
+    https://upload.wikimedia.org/wikipedia/commons/e/e6/Nixon_resignation_audio_with_buzz_removed.ogg
+```
+
+
 ## License
 
-I thereby disclaim any copyright of these media files of me saying *Kim Kardashian*, therefore they are in public domain.
+I thereby disclaim any copyright of these media files of me saying *Kim Kardashian*, therefore they are in public domain. [Nixon speech](https://en.wikipedia.org/wiki/File:Nixon_resignation_audio_with_buzz_removed.ogg) is in public domain.
+
