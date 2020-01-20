@@ -1,0 +1,11 @@
+# In general, use LF for text
+* text eol=lf
+
+*.m4a binary
+*.flac binary
+*.mkv binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.mov binary
+

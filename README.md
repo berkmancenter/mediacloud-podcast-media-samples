@@ -1,6 +1,6 @@
 # Media samples for testing podcast transcoding
 
-Video and audio samples of both me saying *Kim Kardashian* (multiple short samples) and Richard Nixon resigning (a single long sample). Used for [Media Cloud's](https://github.com/berkmancenter/mediacloud) podcast transcription testing.
+Video and audio samples of both me saying *Kim Kardashian* (multiple short samples), and a snippet of Richard Nixon's resignation speech (a single long sample). Used for [Media Cloud's](https://github.com/berkmancenter/mediacloud) podcast transcription testing.
 
 Stored here in order to not litter the main repo with huge media files
 
@@ -98,6 +98,8 @@ Useful for testing longer transcription operations, i.e. what happens if we subm
 ```shell
 curl --output nixon_speech-vorbis-15m22s.ogg \
     https://upload.wikimedia.org/wikipedia/commons/e/e6/Nixon_resignation_audio_with_buzz_removed.ogg
+ffmpeg -i nixon_speech-vorbis-15m22s.ogg -t 60 -acodec copy nixon_speech-vorbis-1m.ogg
+rm nixon_speech-vorbis-15m22s.ogg
 ```
 
 
